@@ -45,7 +45,7 @@
 
 
 
-.navbar nav ul a:hover {
+.navbar nav ul a:hover    {
     transform: scale(1.1);
     color: #fff;
 }
