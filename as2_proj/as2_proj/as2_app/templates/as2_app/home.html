@@ -9,77 +9,6 @@
 {% endblock %}
 
 {% block main_body %}
-<style>
-        
-        
-        .background {
-            background-image: url(https://connect-assets.prosple.com/cdn/ff/tfOuRR4-FX96S513LI--XRgbJ6nXz83IcLJJhL0HL30/1657696889/public/2022-07/banner-cdu-1786x642-2022.png);
-            /* Replace 'your-image.jpg' with the URL or path to your image */
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            /* Full width of the viewport */
-            height: 700px;
-            /* Full height of the viewport */
-            position: relative;
-        }
-        
-        .overlay {
-            position: absolute;
-            height: 660px;
-            background-color: rgba(3, 1, 63, 0.471);
-            /* Semi-transparent black background */
-            padding: 20px;
-            text-align: center;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: white;
-        }
-        
-        .overlay h1 {
-            margin-top: 200px;
-            width: 100%;
-            
-            line-height: 1.8;
-            font-size: xx-large;
-            background-color: transparent;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: white;
-        }
-        
-        .overlay p {
-            background-color: transparent;
-            color: white;
-            margin-left: 1200px;
-        }
-        
-        .overlay a {
-            width: 15%;
-            background-color: #160355;
-            display: inline-block;
-            margin-top: 10px;
-            margin-left: 65%;
-            height: 70px;
-            border: none;
-            color: #FFF;
-            cursor: pointer;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight: bold;
-            padding: 10px 32px;
-            font-size: 25px;
-            font-weight: lighter;
-            transition: transform 0.3s ease;
-            text-decoration: none;
-            text-align: center;
-            display: flex;
-        }
-        
-        .overlay a:hover {
-            transform: scale(1.1);
-        }
-
-</style>
-
-
 
 
 <div class="background">
@@ -87,7 +16,7 @@
       <h1>Welcome to CDU Thesis Facility Showcase</h1>
       <p>The thesis project at Charles Darwin University (CDU) aims to provide students with an opportunity to engage in in-depth research and scholarly inquiry within their respective fields of study.</p>
       <p>Join us in celebrating the power of knowledge, curiosity, and discovery as we showcase the exceptional thesis projects happening at Charles Darwin University. Welcome to the forefront of academic excellence and innovation!</p>
-      <a href="{% url 'project' %}">Find Our Project</a>
+      <a href="{% url 'project' %}">Find Our Projects</a>
   </div>
 </div>
 

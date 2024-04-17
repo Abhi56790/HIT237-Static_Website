@@ -9,94 +9,6 @@ Project Details
 {% endblock %}
 
 {% block main_body %}
-<style>
-  body {
-    
-    background-color: #f5f5f5;
-  }
- 
-  .project_list {
-    list-style-type: none;
-    padding: 20px;
-    margin: 0;
-  }
- 
-  .project_item {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
- 
-  .project_item:hover {
-    transform: translateY(-5px);
-  }
- 
-  .project_title {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 8px;
-    background-color: #c7bfbf;
-    border-radius: 5px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #131a14;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
- 
-  .project_topic_num {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #000000;
-    margin-bottom: 15px;
-  }
- 
-  .project_description {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #d1e0c9;
-    padding: 12px;
-    border-radius: 13px;
-    color: #282b29;
-    margin-bottom: 15px;
-    line-height: 1.6;
-    font-size: 20px;
-    font-weight: bold;
-  }
- 
-  .project_supervisor {
-    background-color: #b8cac7;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius: 24px;
-    font-style: bold;
-    color: #000000;
-    padding: 10px;
-    font-size: 22px;
-  }
- 
-  .project_supervisor:before {
-    content: "Supervisor: ";
-    font-weight: bold;
-  }
-
-  .go-back-link {
-    display: flex;
-    justify-content: center;
-}
-
-.go-back-link a {
-    background-color: #3d2a7e;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    padding: 10px;
-    transition: transform .2s;
-}
-
-.go-back-link a:hover {
-    transform: scale(1.1);
-}
-</style>
 
 {% if project %}
 <ul class="project_list">
@@ -113,4 +25,5 @@ Project Details
 <div class = 'go-back-link'>
 <a href="{% url 'project' %}">Go Back To The List</a>
 </div>
+
 {% endblock %}
