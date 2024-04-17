@@ -1,6 +1,7 @@
 
                                      /*        Site-base.html css        */
 
+
 .navbar {
     background: #eee9e9;
     border-radius: 50px;
@@ -29,38 +30,27 @@
     padding: 13px 35px;
     margin: 10px;
     font-size: 18px;
-    font-weight: 500;
-    color: #292828;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     position: relative;
     z-index: 2;
     transition: color 0.3s;
     text-decoration: none;
+    background-color: rgb(144, 138, 138);
+    border-radius: 30px;
+    transition: transform 0.3s ease;
 }
 
-.navbar nav ul a::after {
-    content: '';
-    background: #000000;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    transition: top 0.3s, opacity 0.3s;
-}
+
+
 
 .navbar nav ul a:hover {
+    transform: scale(1.1);
     color: #fff;
 }
 
-.navbar nav ul a:hover::after {
-    top: 50%;
-    opacity: 1;
-}
+
 
 .navbar h1 {
     margin: 0;

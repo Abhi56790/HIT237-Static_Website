@@ -81,6 +81,11 @@
     color: #0056b3;
     text-decoration: none; 
   }
+
+  .clicker{
+    color: #083462;
+    text-align: center;
+  }
 </style>
 
 {% for thess in articles %}
@@ -91,7 +96,8 @@
         <strong>{{ thess.title }}</strong>
         <em>{{ thess.relv_desc }}</em>
         <p>Supervisor: {{ thess.superviser }}</p>
-        <a href="{% url 'project_details' thess.id %}">Learn more</a>
+        <p class = 'clicker'>Click To Learn More</p>
+        <a href="{% url 'project_details' thess.id %}"></a>
       </li>
     </ul>
   </div>
