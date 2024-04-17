@@ -79,20 +79,23 @@ Project Details
     font-weight: bold;
   }
 
-  .go-back-link a{
+  .go-back-link {
+    display: flex;
+    justify-content: center;
+}
+
+.go-back-link a {
     background-color: #3d2a7e;
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    
+    padding: 10px;
+    transition: transform .2s;
+}
 
-    
-  }
-
-  .go-back-link :hover{
+.go-back-link a:hover {
     transform: scale(1.1);
-    
-  }
+}
 </style>
 
 {% if project %}
