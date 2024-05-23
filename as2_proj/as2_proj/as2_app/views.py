@@ -10,6 +10,7 @@ def projectlist(request):
 
     context = {
         'articles': projects(),
+        
     }
     
     return render(request, 'as2_app/projectlist.html', context)
@@ -136,8 +137,7 @@ class thesis_projects:
         self.relv_desc = relv_desc
 
 
-    def __str__(self):
-        return (self.id) + ': ' + self.topic_num + ',' + self.title
+    
 
 
 
