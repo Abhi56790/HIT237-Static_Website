@@ -37,6 +37,10 @@ def project_details(request , pk):
     return render(request, 'as2_app/projectdetails.html', context)
 
 
+def display_forms(request):
+
+    return render(request, 'as2_app/display_forms.html')
+
 
 
 
