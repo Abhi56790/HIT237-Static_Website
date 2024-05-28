@@ -1,0 +1,28 @@
+{% extends "as2_app/site_base.html" %}
+
+{% block page_title %}
+  Thesis Projects
+{% endblock %}
+
+{% block page_heading %}
+  Thesis Projects
+{% endblock %}
+
+{% block main_body %}
+{% for thess in articles %}
+  <div class="container">
+    <ul>
+      <li>
+        <strong>{{ thess.first_name }} {{ thess.last_name }}</strong>
+        <em>{{ thess.email }}</em>
+        <p>Major: {{ thess.major }}</p>
+        <p>ID: {{ thess.student_id }}</p>
+        <p>Working on thessis : {{ thess.thesis }}</p> <!-- Debugging line -->
+        
+        
+      </li>
+    </ul>
+  </div>
+{% endfor %}
+<a class="clicker" href="{% url 'home' %}">Go to Home</a>
+{% endblock %}

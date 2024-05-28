@@ -1,0 +1,18 @@
+{% extends "as2_app/site_base.html" %}
+
+{% block page_title %}
+Project Details
+{% endblock %}
+
+{% block page_heading %}
+Project Details
+{% endblock %}
+
+{% block main_body %}
+
+
+<a href="{% url 'add_supervisor' %}">Add Supervisor </a>
+<a href="{% url 'add_thesis' %}">Add Thessis </a>
+<a href="{% url 'add_student' %}">Add student </a>
+
+{% endblock %}

@@ -9,22 +9,19 @@
 {% endblock %}
 
 {% block main_body %}
-
-
 {% for thess in articles %}
-<a href="{% url 'project_details' thess.id %}">
   <div class="container">
     <ul>
       <li>
         <strong>{{ thess.title }}</strong>
         <em>{{ thess.relv_desc }}</em>
-        <p>Supervisor: {{ thess.superviser }}</p>
-        <p class = 'clicker'>Click To Learn More</p>
-        <a href="{% url 'project_details' thess.id %}"></a>
+        <p>Supervisor: {{ thess.supervisor }}</p>
+        
+        <a class="clicker" href="{% url 'project_details' thess.topic_num %}">Click To Learn More</a>
+        <a href="{% url 'update_thesis' thess.topic_num %}">Update Thesis</a>
+        <a href="{% url 'delete_thesis' thess.topic_num %}">Delete Thesis</a>
       </li>
     </ul>
   </div>
-</a>
 {% endfor %}
-
 {% endblock %}
